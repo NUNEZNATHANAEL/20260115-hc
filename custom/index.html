@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>フォーム</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+ <body>
+  <header>
+    <h1>～諸島旅館 南の里～</h1>
+  </header>
+
+  <main>
+    <form action="confirm.html">
+      <h2 class="form-item">
+        <p class="title">予約フォーム</p>
+      </h2>
+
+      <label id="user-name" class="form-item">
+        <p class="form-heading">お名前<span class="require">必須</span></p>
+        <input type="text" placeholder="お名前をフルネームでご入力ください" required>
+      </label>
+
+      <label id="user-email" class="form-item">
+        <p class="form-heading">メールアドレス<span class="require">必須</span></p>
+        <input type="email" placeholder="メールアドレスをご入力ください" required>
+      </label>
+      
+      <label id="user-tel" class="form-item">
+        <p class="form-heading">電話番号<span class="require">必須</span></p>
+        <input type="tel" placeholder="電話番号をご入力ください" required>
+      </label>
+
+      <label for="reservation-date" class="form-item">
+        <p class="form-heading">ご来店予定日<span class="require">必須</span></p>
+        <input type="datetime-local" id="reservation-date" required>
+      </label>
+
+      <label id="contact-content" class="form-item">
+        <p class="form-heading">ご要望｜その他<span class="require">必須</span></p>
+        <textarea placeholder="ご要望等何かございましたらご入力ください。（400文字以内）"></textarea>
+      </label>
+
+      <div class="btn-area">
+        <button id="btn_confirm" class="btn">確認する</button>
+      </div>
+    </form>
+  </main>
+
+      <footer>
+      <small class="copyright">&copy; 2025 form </small>
+      &nbsp; &nbsp;
+      <small class="copyright"> 電話番号 : 090-1234-5678 メールアドレス : takadanobaba@tech.ac.jp</small>
+    </footer>
+ </body>
+</html>
